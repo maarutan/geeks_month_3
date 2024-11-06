@@ -8,12 +8,10 @@
 ./**/.env*
 ./**/.env/
 
-env*
-env/
-.env*
-.env/
-
-
+./env*
+./env/
+./.env*
+./.env/
 
 ./**/.vscode
 ./**/.vscode*
