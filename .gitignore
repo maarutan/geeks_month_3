@@ -1,29 +1,27 @@
-./**/venv/
-./**/.venv/
-./**/venv*
-./**/.venv*
+venv/
+.venv/
+**/venv/
+**/.venv/
+**/venv*
+**/.venv*
 
-./**/env*
-./**/env/
-./**/.env*
-./**/.env/
+env*
+.env*
+**/env*
+**/.env*
 
-./env*
-./env/
-./.env*
-./.env/
+.vscode/
+**/.vscode*
+**/vscode*
+**/.vscode
 
-./**/.vscode
-./**/.vscode*
-./**/vscode
-./**/vscode*
+__pycache__/
+**/__pycache__*
+**/.__pycache__*
+**/.pycache__*
 
-./**/__pycache__
-./**/.__pycache__
-./**/__pycache__*
-./**/.__pycache__*
+.idea
 
-.idea 
+.git
+**/.git*
 
-./**/.git
-./**/.git*
