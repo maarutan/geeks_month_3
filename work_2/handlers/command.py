@@ -2,7 +2,6 @@
 from aiogram import types, Dispatcher  # type: ignore
 from config import bot, dp
 import os
-from time import sleep
 import random
 
 
@@ -20,10 +19,9 @@ async def start(message: types.Message):
 
 
 async def send_mem(message: types.Message):
-    photoPath = random.choice(os.listdir("./media"))
-    sleep(0.4)
-    photo = open(photoPath, "rb")
-    await message.answer_photo(photo=photo, caption="/mem")
+    photoPath = os.path.join("./media", random.choice(os.listdir("./media")))
+    with open(photoPath, "rb") as photo:
+        await message.answer_photo(photo=photo, caption="/mem")
 
 
 # with open(photoPath, "rb") as photo:

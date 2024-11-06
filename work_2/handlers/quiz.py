@@ -51,7 +51,7 @@ async def quiz_3(call: types.CallbackQuery):
     button = InlineKeyboardButton(text="Завершить", callback_data="end_quiz")
     keyboard.add(button)
 
-    with open("media/python.png", "rb") as photo:
+    with open("./quiz/python.png", "rb") as photo:
         await call.message.answer_photo(photo=photo, caption="")
 
     question = "Select all correct answers:\n```print('Hello World')```"
