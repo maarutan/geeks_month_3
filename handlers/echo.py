@@ -1,4 +1,5 @@
 from aiogram import types, Dispatcher
+from time import sleep
 
 
 async def echo_message(message: types.Message):
